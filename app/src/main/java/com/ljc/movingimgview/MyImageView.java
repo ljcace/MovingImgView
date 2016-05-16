@@ -1,4 +1,4 @@
-package com.ljc.testproject;
+package com.ljc.movingimgview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -12,6 +12,8 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
 /**
+ * use by SurfaceView
+ *
  * Created by lijiacheng on 16/5/5.
  */
 public class MyImageView extends SurfaceView implements SurfaceHolder.Callback, Runnable {

@@ -1,4 +1,4 @@
-package com.ljc.testproject;
+package com.ljc.movingimgview;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 /**
+ * use by RelativeLayout
  * Created by lijiacheng on 16/5/11.
  */
 public class MyMoveImgView extends RelativeLayout implements Runnable {
@@ -64,7 +65,7 @@ public class MyMoveImgView extends RelativeLayout implements Runnable {
     }
 
     /**
-     * 设置图片
+     * set a new img
      *
      * @param bitmap
      */
@@ -85,7 +86,7 @@ public class MyMoveImgView extends RelativeLayout implements Runnable {
     }
 
     /**
-     * 切换图片
+     * change to another img
      *
      * @param img
      */
@@ -100,13 +101,17 @@ public class MyMoveImgView extends RelativeLayout implements Runnable {
         }
     }
 
+    /**
+     * change thread status
+     * @param running
+     */
     public void setRunning(boolean running) {
         this.running = running;
     }
 
 
     /**
-     * 渐隐图片
+     * unshow animation
      *
      * @param hideimg
      */
@@ -136,7 +141,7 @@ public class MyMoveImgView extends RelativeLayout implements Runnable {
     }
 
     /**
-     * 渐现图片
+     * show animation
      *
      * @param showimg
      */
@@ -172,7 +177,7 @@ public class MyMoveImgView extends RelativeLayout implements Runnable {
     }
 
     /**
-     * 添加子视图
+     * add imgview
      *
      * @param img
      */
@@ -182,7 +187,7 @@ public class MyMoveImgView extends RelativeLayout implements Runnable {
     }
 
     /**
-     * 移除子视图
+     * remove imageview
      *
      * @param img
      */
@@ -191,6 +196,9 @@ public class MyMoveImgView extends RelativeLayout implements Runnable {
         child_count--;
     }
 
+    /**
+     *
+     */
     private void setThreadInfo() {
         width = nowBitmap.getWidth();
         height = nowBitmap.getHeight();
@@ -212,7 +220,7 @@ public class MyMoveImgView extends RelativeLayout implements Runnable {
     }
 
     /**
-     * 绘制视图
+     * refresh show view
      */
     private void DrawImg() {
         if (running) {

@@ -6,18 +6,18 @@
     android:gravity="center"
     android:orientation="vertical"
     android:background="#000000"
-    tools:context="com.ljc.testproject.MainActivity">
+    tools:context=".MainActivity">
 
 
     <!--<com.ljc.testproject.MyImageView-->
     <!--android:id="@+id/sv"-->
     <!--android:layout_width="460px"-->
     <!--android:layout_height="460px" />-->
-    <com.ljc.testproject.MyMoveImgView
+    <com.ljc.movingimgview.MyMoveImgView
         android:id="@+id/myimg"
         android:layout_width="460px"
         android:layout_height="460px"
-        android:gravity="center"></com.ljc.testproject.MyMoveImgView>
+        android:gravity="center"></com.ljc.movingimgview.MyMoveImgView>
     <TextView
         android:id="@+id/next"
         android:layout_width="wrap_content"
