@@ -1,4 +1,4 @@
-package com.ljc.testproject;
+package com.ljc.movingimgview;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

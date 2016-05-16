@@ -1,4 +1,4 @@
-package com.ljc.testproject;
+package com.ljc.movingimgview;
 
 import org.junit.Test;
 

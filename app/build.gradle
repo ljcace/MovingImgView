@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.ljc.testproject"
+        applicationId "com.ljc.movingimgview"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
